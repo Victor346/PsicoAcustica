@@ -5,4 +5,4 @@ In order to run this project you need to have [Rust with Cargo](https://www.rust
 installed locally and run the following command in the project directory:
 ```
 cargo run
-```https://www.rust-lang.org/tools/install
+```
