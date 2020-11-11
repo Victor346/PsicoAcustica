@@ -22,24 +22,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5221443-b305-4d34-8736-7d4070996f7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/Build/Build.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/Build/Build.framework.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/Build/Build.loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/Build/Build.wasm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/fullscreen-button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/progress-bar-empty-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/progress-bar-empty-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/progress-bar-full-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/progress-bar-full-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/unity-logo-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/unity-logo-light.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/TemplateData/webgl-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/game/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605054430269</updated>
-      <workItem from="1605054431455" duration="7334000" />
+      <workItem from="1605054431455" duration="7487000" />
     </task>
     <servers />
   </component>
