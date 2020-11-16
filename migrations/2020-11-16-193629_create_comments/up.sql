@@ -1,0 +1,6 @@
+CREATE TABLE comments (
+    id SERIAL PRIMARY KEY,
+    body TEXT NOT NULL,
+    author VARCHAR NOT NULL DEFAULT 'Anonimo',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
