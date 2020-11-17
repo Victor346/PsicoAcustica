@@ -85,23 +85,19 @@
       </div>
     </nav>
     <div class="body-container">
-      <canvas
-        id="unity-canvas"
-        style="width: 960px; height: 600px; background: #231f20"
-      ></canvas>
-    </div>
-    <script src="game/Build/Build.loader.js"></script>
-    <script>
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "game/Build/Build.data",
-        frameworkUrl: "game/Build/Build.framework.js",
-        codeUrl: "game/Build/Build.wasm",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "PsicoAcustica",
-        productVersion: "1.0",
-      });
-    </script>
+      <canvas id="unity-canvas" style="width: 960px; height: 600px; background: #231F20"></canvas>
+      <script src="Build/Build.loader.js"></script>
+      <script>
+        createUnityInstance(document.querySelector("#unity-canvas"), {
+          dataUrl: "Build/Build.data",
+          frameworkUrl: "Build/Build.framework.js",
+          codeUrl: "Build/Build.wasm",
+          streamingAssetsUrl: "StreamingAssets",
+          companyName: "DefaultCompany",
+          productName: "ProtoPsico",
+          productVersion: "1.0",
+        });
+      </script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
