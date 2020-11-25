@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta charset="UTF-8" />
     <title>Bienvenidos</title>
     <link
@@ -9,35 +13,14 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <style>
-      body {
-        background-color: #5e0f17;
-        color: white;
-        text-align: center;
-      }
-      li {
-        font-size: large;
-        padding-left: 1rem;
-      }
-      .body-container {
-        margin-top: 1rem;
-      }
-      .container-description {
-        margin-top: 2rem;
-      }
-      .description {
-        text-align: left;
-        font-weight: bold;
-        font-size: x-large;
-      }
-    </style>
+    <link rel="stylesheet" href="/static/styles/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img
-            src="/"
+            src="/static/imgs/corazon.png"
             width="30"
             height="30"
             alt="Heart Image"
@@ -77,10 +60,17 @@
                 Infografías
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/info01">Infografía #1</a>
-                <a class="dropdown-item" href="/info02">Infografía #2</a>
-                <a class="dropdown-item" href="/info03">Infografía #3</a>
-                <a class="dropdown-item" href="/info04">Infografía #4</a>
+                <a class="dropdown-item" href="/info01">Audio Binaural</a>
+                <a class="dropdown-item" href="/info02">El Oído Humano</a>
+                <a class="dropdown-item" href="/info03"
+                  >El Corazón Delator de Edgar Allan Poe</a
+                >
+                <a class="dropdown-item" href="/info04"
+                  >Reflejo Corporal del Miedo</a
+                >
+                <a class="dropdown-item" href="/info05"
+                  >Visión del Mundo por Persona Ciega</a
+                >
               </div>
             </li>
             <li class="nav-item">
@@ -92,7 +82,7 @@
     </nav>
     <div class="container body-container">
       <div class="alert alert-warning" role="alert">
-        <h4 class="alert-heading">¡Experiencia Incluyente!</h4>
+        <h6 class="alert-heading">¡Experiencia Incluyente!</h6>
         <p>Apto para cualquier persona con audición</p>
       </div>
 
@@ -103,27 +93,50 @@
       </div>
       <div class="row">
         <div class="col">
-          <h3>Psicoacústica y neurociencias de la audición</h3>
+          <h4>Psicoacústica y neurociencias de la audición</h4>
         </div>
       </div>
       <div class="row container-description">
-        <div class="col-12 col-md-6 description">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quam
-            tellus, imperdiet eget quam non, aliquet sagittis ex. Aliquam
-            rhoncus nisi ligula, ac aliquet neque hendrerit sed. Etiam ut lacus
-            vitae nunc rutrum vestibulum. Duis tincidunt eget velit ut blandit.
-            Fusce vitae vestibulum nisl, non sodales diam. Duis orci ex,
-            facilisis id blandit in, feugia Mauris non quam at ligula dapibus
-            rutrum sed vitae felis.Nam nec lorem bibendum, consectetur nunc non,
-            vehicula felis. Sed eleifend maximus pretium. Mauris sollicitudin,
-            nisi id cursus mollis, turpis diam dapibus leo, non lobortis est
-            lectus vitae augue. Mauris placerat nisl justo, ac tempor turpis
-            sagittis ac. Pellentesqu
+        <div class="col-12 col-md-6">
+          <h4 class="description">
+            Bienvenido a una experiencia sensorial única que pondrá a prueba tus
+            sentidos.
+          </h4>
+          <p class="description">
+            <br />
+            <u><b>¿A que suena la culpa?</b></u> es un proyecto obtenido a
+            partir del arduo trabajo de los estudiantes de la materia
+            <u
+              ><b
+                >Psicoacustica y neurociencias del Tecnológico de Monterrey.</b
+              ></u
+            >
+            <br /><br />
+            A partir de la creación de un diseño sonoro, composición musical,
+            diseño de un guión junto con su interpretación y la creación de esta
+            plataforma web; se busca resaltar la experiencia obtenida a lo largo
+            del curso para generar un resultado emotivo al espectador, que se
+            adentrará a la adaptación de uno de las historias mas reconocidas
+            por el escritor Edgar Allan Poe, El corazon delator. <br /><br />
+            <b
+              >Es recomendable el uso de audifonos para tener la máxima
+              experiencia inmersiva que traemos para usted.</b
+            >
+            <br /><br />
+            Recorra nuestra plataforma para vivir la experiencia, saber datos
+            interesantes relacionados al proyecto y conocer a las personas que
+            estuvieron detrás de este proyecto.
+            <br /><br />
+            Esperemos sea de su agrado y que les lata tan fuerte como a nosotros
+            al diseñarlo.
           </p>
         </div>
         <div class="col-12 col-md-6">
-          <p>Aqui va imagen</p>
+          <img
+            class="img-fluid"
+            alt="Alan Poe Dibujo"
+            src="/static/imgs/Poe.png"
+          />
         </div>
       </div>
     </div>
