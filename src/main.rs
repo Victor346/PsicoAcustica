@@ -16,6 +16,7 @@ use diesel::r2d2::{self, ConnectionManager};
 use diesel_migrations::embed_migrations;
 use std::collections::HashMap;
 use askama::Template;
+use chrono::Utc;
 
 #[derive(Template)]
 #[template(path = "comments.html")]
@@ -30,7 +31,11 @@ type DbPool = r2d2::Pool<ConnectionManager<PgConnection>>;
 
 #[get("/")]
 async fn hello() -> Result<NamedFile> {
-    Ok(NamedFile::open("./static/index.html")?)
+    if Utc::now().timestamp() < 1606543200 {
+        Ok(NamedFile::open("./static/progress.html")?)
+    } else {
+        Ok(NamedFile::open("./static/index.html")?)
+    }
 }
 
 #[get("/credits")]
@@ -206,7 +211,7 @@ async fn main() -> std::io::Result<()> {
             .wrap(middleware::Logger::default())
             .service(game)
             .service(fs::Files::new("/game", "./static/game"))
-            .service(fs::Files::new("static/imgs", "./static/imgs"))
+            .service(fs::Files::new("/static/imgs", "./static/imgs"))
             .service(hello)
             .service(credits)
             .service(info01)
