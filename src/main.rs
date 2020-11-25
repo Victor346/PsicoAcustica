@@ -206,6 +206,7 @@ async fn main() -> std::io::Result<()> {
             .wrap(middleware::Logger::default())
             .service(game)
             .service(fs::Files::new("/game", "./static/game"))
+            .service(fs::Files::new("static/imgs", "./static/imgs"))
             .service(hello)
             .service(credits)
             .service(info01)
