@@ -31,11 +31,7 @@ type DbPool = r2d2::Pool<ConnectionManager<PgConnection>>;
 
 #[get("/")]
 async fn hello() -> Result<NamedFile> {
-    if Utc::now().timestamp() < 1606543200 {
-        Ok(NamedFile::open("./static/progress.html")?)
-    } else {
-        Ok(NamedFile::open("./static/index.html")?)
-    }
+    Ok(NamedFile::open("./static/index.html")?)
 }
 
 #[get("/credits")]
