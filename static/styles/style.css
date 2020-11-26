@@ -79,6 +79,7 @@ h1 {
   font-size: var(--h1-size);
   color: var(--title-color);
   letter-spacing: var(--h1-spacing);
+  font-family: Cinzel, serif;
 }
 h2 {
   font-size: var(--h2-size);
