@@ -55,6 +55,10 @@ async fn info03() -> Result<NamedFile> {
 async fn info04() -> Result<NamedFile> {
     Ok(NamedFile::open("./static/infographics/info04.html")?)
 }
+#[get("/info05")]
+async fn info05() -> Result<NamedFile> {
+    Ok(NamedFile::open("./static/infographics/info05.html")?)
+}
 
 #[get("/game")]
 async fn game() -> Result<NamedFile> {
@@ -180,7 +184,7 @@ async fn main() -> std::io::Result<()> {
     env_logger::init();
     dotenv::dotenv().ok();
 
-    // Database Setup
+    //Database Setup
     let connspec = std::env::var("DATABASE_URL").expect("DATABASE_URL");
     let manager = ConnectionManager::<PgConnection>::new(connspec);
     let pool = r2d2::Pool::builder()
@@ -208,12 +212,14 @@ async fn main() -> std::io::Result<()> {
             .service(game)
             .service(fs::Files::new("/game", "./static/game"))
             .service(fs::Files::new("/static/imgs", "./static/imgs"))
+            .service(fs::Files::new("/static/styles", "./static/styles"))
             .service(hello)
             .service(credits)
             .service(info01)
             .service(info02)
             .service(info03)
             .service(info04)
+            .service(info05)
             .service(favicon)
             .service(paged_comments)
             .service(create_comment)
