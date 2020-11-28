@@ -52,7 +52,8 @@ li {
   margin-top: 2rem;
 }
 .description {
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 hr {
@@ -84,13 +85,16 @@ h1 {
 h2 {
   font-size: var(--h2-size);
   color: var(--title-color);
+  font-family: Cinzel, serif;
 }
 h4 {
   letter-spacing: var(--h4-spacing);
+  font-family: Cinzel, serif;
 }
 h6 {
   color: var(--title-color);
   font-size: var(--h6-size);
+  font-family: Cinzel, serif;
 }
 
 #heart {
@@ -135,7 +139,8 @@ h6 {
     --section-2-content-size: 15px;
   }
   .description {
-    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 

@@ -84,7 +84,11 @@
       </div>
     </nav>
     <div class="body-container">
-      <canvas id="unity-canvas" style="width: 100%; height: 100%; background: #231F20"></canvas>
+      <div class="alert alert-danger" role="alert">
+        <p>Solo compatible con computadoras personales</p>
+        <p>Al salir de la pestaña se detiene la experiencia</p>
+      </div>
+      <canvas id="unity-canvas" style="width: 75%; background: #231F20"></canvas>
       <script src="game/Build/Build.loader.js"></script>
       <script>
         createUnityInstance(document.querySelector("#unity-canvas"), {
